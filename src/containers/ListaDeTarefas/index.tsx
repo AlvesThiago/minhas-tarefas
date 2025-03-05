@@ -1,24 +1,25 @@
 import Tarefa from '../../components/FiltroCard/Tarefa'
 import * as S from './styles'
+import * as enums from '../../utils/enums/Tarefa'
 
 const tarefas = [
   {
     tituilo: 'Estudar JavaScript',
     descricao: 'Ver a aula 3 da EBAC',
-    prioridade: 'importante',
-    status: 'pendente'
+    prioridade: enums.Prioridade.IMPORTANTE,
+    status: enums.Status.PENDENTE
   },
   {
     tituilo: 'Estudar JavaScript',
     descricao: 'Ver a aula 3 da EBAC',
-    prioridade: 'urgente',
-    status: 'pendente'
+    prioridade: enums.Prioridade.URGENTE,
+    status: enums.Status.CONCLUIDA
   },
   {
     tituilo: 'Estudar JavaScript',
     descricao: 'Ver a aula 3 da EBAC',
-    prioridade: 'importante',
-    status: 'pendente'
+    prioridade: enums.Prioridade.URGENTE,
+    status: enums.Status.PENDENTE
   }
 ]
 
